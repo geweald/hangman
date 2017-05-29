@@ -4,4 +4,8 @@
   flex-flow: row wrap;
   justify-content: flex-end;
   margin: rem(50);
+
+  @media screen and (max-width: rem(430)) {
+    margin: rem(10);
+  }
 }

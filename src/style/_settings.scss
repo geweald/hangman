@@ -32,6 +32,8 @@ $folk-blue-color: rgb(60, 90, 146);
 /************************************
 ** POSITIONS
 ************************************/
+$mobile-width: rem(430);
+
 $box-width: rem(1620);
 $bar-v-left: rem(185);
 
@@ -49,11 +51,11 @@ $folk-corpus-top: ($folk-head-top + rem(230));
 $folk-corpus-left: ($folk-head-left + rem(43));
 
 $folk-arms-top: ($folk-head-top + rem(223));
-$folk-left-arm-left: ($folk-head-left - rem(1));
+$folk-left-arm-left: ($folk-head-left + rem(-1));
 $folk-right-arm-left: ($folk-head-left + rem(145));
 
 $folk-hands-top: ($folk-head-top + rem(329));
-$folk-left-hand-left: ($folk-head-left - rem(42));
+$folk-left-hand-left: ($folk-head-left + rem(-42));
 $folk-right-hand-left: ($folk-head-left + rem(206));
 
 $folk-legs-top: ($folk-head-top + rem(373));
@@ -61,5 +63,5 @@ $folk-left-leg-left: ($folk-head-left + rem(27));
 $folk-right-leg-left: ($folk-head-left + rem(115));
 
 $folk-feet-top: ($folk-head-top + rem(532));
-$folk-left-foot-left: ($folk-head-left + rem(139));
-$folk-right-foot-left: ($folk-head-left + rem(-31));
+$folk-left-foot-left: ($folk-head-left + rem(-31));
+$folk-right-foot-left: ($folk-head-left + rem(139));

@@ -1,12 +1,16 @@
 .MissedLetters {
   width: 50%;
-  padding: 0 rem(60);
+  padding: 0 rem(50);
   text-transform: uppercase;
   display: inline-block;
   vertical-align: top;
 
   @media screen and (max-width: ($box-width / 2)) {
     width: 100%;
+  }
+
+  @media screen and (max-width: rem(430)) {
+    padding: 0 rem(25);
   }
 
   &__title {

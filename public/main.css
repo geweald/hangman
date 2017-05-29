@@ -387,6 +387,9 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 45rem;
     position: relative;
     overflow: hidden; }
+    @media screen and (max-width: 26.875rem) {
+      .App__game {
+        margin: 0.625rem; } }
   .App__square {
     bottom: 0;
     right: 0;
@@ -423,16 +426,22 @@ h1, h2, h3, h4, h5, h6 {
   flex-flow: row wrap;
   justify-content: flex-end;
   margin: 3.125rem; }
+  @media screen and (max-width: 26.875rem) {
+    .WordContainer {
+      margin: 0.625rem; } }
 
 .MissedLetters {
   width: 50%;
-  padding: 0 3.75rem;
+  padding: 0 3.125rem;
   text-transform: uppercase;
   display: inline-block;
   vertical-align: top; }
   @media screen and (max-width: 50.625rem) {
     .MissedLetters {
       width: 100%; } }
+  @media screen and (max-width: 26.875rem) {
+    .MissedLetters {
+      padding: 0 1.5625rem; } }
   .MissedLetters__title {
     color: #53555d;
     font-size: 24pt; }
@@ -521,12 +530,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fece8a; }
   .Folk__right-foot {
     top: 37rem;
-    left: 4.5625rem;
+    left: 15.1875rem;
     position: absolute;
     transform: rotate(7deg); }
   .Folk__left-foot {
     top: 37rem;
-    left: 15.1875rem;
+    left: 4.5625rem;
     position: absolute;
     transform: rotate(-7deg); }
 
@@ -576,7 +585,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
   .GameOver__message {
     color: white;
-    font-size: 58pt; }
+    font-size: 58pt;
+    text-align: center; }
   .GameOver__button {
     color: #fcc300;
     font-size: 24pt;
