@@ -1,0 +1,28 @@
+.MissedLetters {
+  width: 50%;
+  padding: 0 rem(60);
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+
+  @media screen and (max-width: ($box-width / 2)) {
+    width: 100%;
+  }
+
+  &__title {
+    color: $dark-gray-color;
+    font-size: $medium-font-size;
+  }
+
+  &__letters {
+    color: $purple-color;
+    font-size: $big-font-size;
+    font-weight: 900;
+    display: flex;
+    flex-flow: row wrap;
+
+    .letter {
+      margin-right: rem(20);
+    }
+  }
+}

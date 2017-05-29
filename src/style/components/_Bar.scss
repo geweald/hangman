@@ -1,0 +1,19 @@
+.Bar {
+  %bar {
+    background-color: $dark-gray-color;
+  }
+
+  &__vertical {
+    @extend %bar;
+    @include absolute(left $bar-v-left);
+    @include size(rem(30) rem(77));
+    @include borderRadius(0, 0, rem(10), rem(10));
+  }
+
+  &__horizontal {
+    @extend %bar;
+    @include borderRadius(0, rem(10), rem(10), 0);
+    @include absolute(top 0);
+    @include size(rem(255) rem(30));
+  }
+}

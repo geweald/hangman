@@ -1,0 +1,65 @@
+/************************************
+** FONTS
+************************************/
+@font-face {
+	font-family: 'AllerDisplay';
+	src: url('AllerDisplay.ttf');
+}
+
+$big-font-size: 58pt;
+$medium-font-size: 24pt;
+
+/************************************
+** COLORS
+************************************/
+$bg-color: rgb(69, 59, 101);
+$gameover-bg-color: rgba($bg-color, 0.78);
+$light-gray-color: rgb(245, 245, 245);
+$charbox-letter-color: rgb(255, 255, 255);
+$gameover-button-color: rgb(252, 195, 0);
+$gameover-button-overlay-color: rgba($gameover-button-color, 0.2);
+$dark-gray-color: rgb(83, 85, 93);
+$charbox-bg-color: rgba($dark-gray-color, 0.98);
+$purple-color: rgb(121, 0, 252);
+
+$shadow-color: rgba(0, 0, 0, 0.26);
+
+$folk-skin-color: rgb(254, 206, 138);
+$folk-green-light-color: rgb(138, 198, 87);
+$folk-green-dark-color: rgb(78, 160, 106);
+$folk-blue-color: rgb(60, 90, 146);
+
+/************************************
+** POSITIONS
+************************************/
+$box-width: rem(1620);
+$bar-v-left: rem(185);
+
+$folk-arm-rotation: 45deg;
+$folk-leg-rotation: 12deg;
+$folk-foot-rotation: 7deg;
+
+$folk-head-top: rem(60);
+$folk-head-left: rem(104);
+
+$folk-neck-top: ($folk-head-top + rem(190));
+$folk-neck-left: ($folk-head-left + rem(73));
+
+$folk-corpus-top: ($folk-head-top + rem(230));
+$folk-corpus-left: ($folk-head-left + rem(43));
+
+$folk-arms-top: ($folk-head-top + rem(223));
+$folk-left-arm-left: ($folk-head-left - rem(1));
+$folk-right-arm-left: ($folk-head-left + rem(145));
+
+$folk-hands-top: ($folk-head-top + rem(329));
+$folk-left-hand-left: ($folk-head-left - rem(42));
+$folk-right-hand-left: ($folk-head-left + rem(206));
+
+$folk-legs-top: ($folk-head-top + rem(373));
+$folk-left-leg-left: ($folk-head-left + rem(27));
+$folk-right-leg-left: ($folk-head-left + rem(115));
+
+$folk-feet-top: ($folk-head-top + rem(532));
+$folk-left-foot-left: ($folk-head-left + rem(139));
+$folk-right-foot-left: ($folk-head-left + rem(-31));

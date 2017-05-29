@@ -1,0 +1,35 @@
+.App {
+  font-family: 'AllerDisplay';
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+  &__game {
+    border-radius: rem(10);
+    background-color: $light-gray-color;
+    box-shadow: 0 rem(3) rem(95) 0 $shadow-color;
+    margin: rem(30);
+    max-width: $box-width;
+    min-width: 70%;
+    min-height: rem(720);
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__square {
+    @include absolute(right 0 bottom 0);
+    @include size(0);
+    border-top: rem(300) solid transparent;
+    border-right: rem(300) solid $purple-color; 
+  }
+
+  &__top-row {
+    margin-top: rem(30);
+  }
+}
+
+
+
+
+

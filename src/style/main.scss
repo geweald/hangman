@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import "./utils/zIndexVariables";
+@import "./utils/normalize";
+@import "./utils/mixins";
+
+@import "./settings";
+
+
+@import "./root";
+@import "./components/App";
+@import "./components/Bar";
+@import "./components/WordContainer";
+@import "./components/MissedLetters";
+@import "./components/FolkContainer";
+@import "./components/Folk/Folk";
+@import "./components/Folk/Corpus";
+@import "./components/CharBox";
+@import "./components/GameOver";
+

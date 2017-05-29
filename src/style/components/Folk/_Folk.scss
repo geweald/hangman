@@ -1,0 +1,86 @@
+.Folk {
+  position: relative;
+
+  &__head {
+    @include size(rem(192) rem(212));
+    @include absolute(left $folk-head-left top $folk-head-top);
+    z-index: $z-index-1;
+  }
+
+  &__neck {
+    @include size(rem(46) rem(67));
+    @include absolute(left $folk-neck-left top $folk-neck-top);
+    border-radius: rem(10);
+    background-color: $folk-skin-color;
+  }
+
+  %hand {
+    @include circle(rem(30));
+    background-color: $folk-skin-color;
+  }
+
+  &__left-hand {
+    @extend %hand;
+    @include absolute(left $folk-left-hand-left top $folk-hands-top);
+  }
+
+  &__right-hand {
+    @extend %hand;
+    @include absolute(left $folk-right-hand-left top $folk-hands-top);
+  }
+
+  %arm {
+    @include size(rem(48) rem(140));
+    border-radius: rem(10);
+  }
+
+  &__left-arm {
+    @extend %arm;
+    @include absolute(left $folk-left-arm-left top $folk-arms-top);
+    background-color: $folk-green-light-color;
+    transform: rotate($folk-arm-rotation);
+  }
+
+  &__right-arm {
+    @extend %arm;
+    @include absolute(left $folk-right-arm-left top $folk-arms-top);
+    background-color: $folk-green-dark-color;
+    transform: rotate(-$folk-arm-rotation);
+  }
+
+  %leg {
+    @include size(rem(50) rem(176));
+    background-color: $folk-blue-color;
+    border-radius: rem(10);
+  }
+
+  &__left-leg {
+    @extend %leg;
+    @include absolute(left $folk-left-leg-left top $folk-legs-top);
+    transform: rotate($folk-leg-rotation);
+  }
+
+  &__right-leg {
+    @extend %leg;
+    @include absolute(left $folk-right-leg-left top $folk-legs-top);
+    transform: rotate(-$folk-leg-rotation);
+  }
+
+  %foot {
+    @include size(rem(84) rem(30));
+    border-radius: rem(10);
+    background-color: $folk-skin-color;
+  }
+
+  &__right-foot {
+    @extend %foot;
+    @include absolute(left $folk-right-foot-left top $folk-feet-top);
+    transform: rotate($folk-foot-rotation);
+  }
+
+  &__left-foot {
+    @extend %foot;
+    @include absolute(left $folk-left-foot-left top $folk-feet-top);
+    transform: rotate(-$folk-foot-rotation);
+  }
+}

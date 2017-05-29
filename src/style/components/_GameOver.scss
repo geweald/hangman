@@ -1,0 +1,29 @@
+.GameOver {
+  @include fixed(top 0 right 0 bottom 0 left 0);
+  z-index: $z-index-9;
+  background-color: $gameover-bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  &__message {
+    color: $charbox-letter-color;
+    font-size: $big-font-size;
+  }
+
+  &__button {
+    color: $gameover-button-color;
+    font-size: $medium-font-size;
+    padding: rem(20) rem(40);
+    border-radius: 1.5em;
+    border: rem(3) dashed $gameover-button-color;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $gameover-button-overlay-color;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.Corpus {
+  @include size(rem(106) rem(166));
+  @include absolute(left $folk-corpus-left top $folk-corpus-top);
+
+  border-radius: rem(15);
+  background-color: $folk-green-dark-color;
+  overflow: hidden;
+
+  &__left {
+    background-color: $folk-green-light-color;
+    width: 50%;
+    height: (122 / 166) * 100%;
+  }
+
+  &__bottom {
+    background-color: $folk-blue-color;
+    height: 100%;
+  }
+}
